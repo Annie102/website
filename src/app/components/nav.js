@@ -7,24 +7,24 @@ export default function Navbar() {
     const pathname = usePathname();
     console.log(pathname)
     return (
-      <nav className="flex justify-center space-x-8 py-6">
+      <nav className="flex justify-center items-center space-x-8 py-6 mb-8 animate-boom-nav">
         <Link
           href="/"
-          className={pathname === "/" ? "text-primary-main font-bold" : "text-black hover:underline"}
+          className={pathname === "/" ? "text-primary-main text-base" : "text-primary-gray-700 text-base"}
         >
           About
         </Link>
-        <span className="text-gray-400">|</span>
+        <div className="w-px h-[10px] bg-gray-200" />
         <Link
           href="/portfolio"
-          className={pathname === "/portfolio" ? "text-primary-main font-bold" : "text-black hover:underline"}
+          className={pathname === "/portfolio" ? "text-primary-main text-base" : "text-primary-gray-700 text-base"}
         >
           Portfolio
         </Link>
-        <span className="text-gray-400">|</span>
+        <div className="w-px h-[10px] bg-gray-200" />
         <Link
           href="/contact"
-          className={pathname === "/contact" ? "text-primary-main font-bold" : "text-black hover:underline"}
+          className={pathname === "/contact" ? "text-primary-main text-base" : "text-primary-gray-700 text-base"}
         >
           Contact
         </Link>

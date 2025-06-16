@@ -1,20 +1,33 @@
 {
-  "name": "profile_web",
-  "version": "0.1.0",
-  "private": true,
+  "name": "mywebsite",
+  "version": "1.0.0",
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "index.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run clean && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "clean": "rm -rf .next"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annie102/website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annie102/website/issues"
+  },
+  "homepage": "https://github.com/Annie102/website#readme",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "@tailwindcss/vite": "^4.1.10",
+    "next": "^15.3.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4"
+    "@tailwindcss/postcss": "^4.1.10",
+    "postcss": "^8.5.5",
+    "tailwindcss": "^4.1.10"
   }
 }
