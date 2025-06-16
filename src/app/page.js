@@ -19,7 +19,7 @@ function IntroBlock() {
       {/* Avatar Section */}
       <div className="w-60 h-60">
         <img
-          src="/image/profile-pic.png"
+          src="./image/profile-pic.png"
           alt="Annie Lin"
           width={240}
           height={240}
@@ -72,7 +72,7 @@ export function SkillBlock() {
 
             {/* Icon + Name */}
             <img
-             src={`/website/image/skill-icon/${skillItem.icon}.svg`}
+             src={`./image/skill-icon/${skillItem.icon}.svg`}
              alt={skillItem.name}
              className="mr-3 w-6 h-6"
             />
@@ -144,7 +144,7 @@ export function AboutMeBlock() {
           {traits.map(({ traitIcon, traitTitle, description }, index) => (
             <div key={index} className="flex gap-4 items-start">
               <img
-             src={`/website/image/trait-icon/${traitIcon}.svg`}
+             src={`./image/trait-icon/${traitIcon}.svg`}
              alt={traitTitle}
              className="mr-3"
             />
@@ -203,7 +203,7 @@ export function AboutMeBlock() {
               {/* Content */}
               <div className="flex items-center gap-3 mb-2">
                 <img
-                  src={`/website/image/company-icon/${exp.companyLogo}.svg`}
+                  src={`./image/company-icon/${exp.companyLogo}.svg`}
                   alt={exp.companyLogo}
                   className="w-6 h-6 object-contain mt-1"
                 />
