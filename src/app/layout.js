@@ -1,6 +1,6 @@
-import { Inter, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/nav.js";
+import { Inter, Geist_Mono } from "next/font/google";
 
 const inter = Inter({
   variable: "--font-inter",
